@@ -1,0 +1,164 @@
+.m-concat-business {
+    width: 616px;
+    height: 102px;
+    font-size: 42px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #fff;
+    line-height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    left: 33.39%;
+    top: 31%;
+    text-align: center
+}
+
+.m-concat-business2 {
+    width: 766px;
+    height: 60px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 40px;
+    position: absolute;
+    left: 29.39%;
+    top: 50%;
+    text-align: center
+}
+
+.server-img2 {
+    background: #3188F4;
+}
+
+.server-img2 p {
+    color: #fff !important;
+}
+
+.server-img2 p:nth-last-child(2) {
+    border-bottom: 1px solid #fff
+}
+
+.m-main-condition-title p {
+    text-align: center
+}
+
+.server-img3 {
+    background: #fff;
+    padding: 0 15px
+}
+
+.server-img3 p:nth-last-child(1) {
+    color: #333 !important;
+}
+
+.server-img3 p:nth-last-child(2) {
+    border-bottom: 1px solid #3188F4
+}
+
+.server-img3 p:nth-last-child(3) {
+    color: #3188F4;
+    font-size: 28px;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(49, 136, 244, 1);
+    line-height: 28px;
+    margin-bottom: 10px
+}
+
+.server-img3:hover {
+    box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.35);
+}
+
+.m-note {
+    width: 1210px;
+    height: 950px;
+    margin: 0 auto;
+}
+
+.m-note p {
+    width: 180px;
+    height: 36px;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
+    line-height: 28px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.m-note-flex {
+    display: flex
+}
+
+.m-note-l {
+    width: 40.333%
+}
+
+.m-note-m {
+    width: 33.333%
+}
+
+.m-note-r {
+    width: 33.333%
+}
+
+.m-note-r p {
+    width: 536px;
+    height: 26px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
+    line-height: 28px;
+}
+
+.m-note-l p {
+    width: 536px;
+    height: 26px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
+    line-height: 28px;
+}
+
+.m-note-l p:nth-last-child(4) {
+    position: relative;
+    top: 37.25%
+}
+
+.m-note-l p:nth-last-child(3) {
+    position: relative;
+    top: 37.25%
+}
+.m-note-l p:nth-last-child(2) {
+    position: relative;
+    top: 46.25%
+}
+.m-note-l p:nth-last-child(1) {
+    position: relative;
+    top: 48.25%
+}
+.m-note-r p:nth-last-child(5) {
+    position: relative;
+    top: 13%
+}
+.m-note-r p:nth-last-child(4) {
+    position: relative;
+    top: 13%
+}
+
+.m-note-r p:nth-last-child(3) {
+    position: relative;
+    top: 13%
+}
+.m-note-r p:nth-last-child(2) {
+    position: relative;
+    top: 71.25%
+}
+.m-note-r p:nth-last-child(1) {
+    position: relative;
+    top: 71.25%
+}
