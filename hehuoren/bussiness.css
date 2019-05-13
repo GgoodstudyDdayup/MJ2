@@ -1,128 +1,149 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-decoration: none;
 }
-.m-banner{
+
+.m-banner {
     background: #333;
     width: 100%;
     height: 94px
 }
-.m-img-title{
+
+.m-img-title {
     width: 100%;
     height: 580px;
-    background: #f40
+    background-image: url(../img/微信图片_20190513192109.png)
 }
-.m-img-title-top{
-    width:754px;
+
+.m-img-title-top {
+    width: 754px;
     height: 65px;
-    font-size:67px;
-    font-family:SourceHanSansCN-Bold;
-    font-weight:bold;
-    color:rgba(255,255,255,1); 
+    font-size: 67px;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-between;
     position: relative;
     top: 136px;
     left: 581px
 }
-.m-img-title-bottom{
+
+.m-img-title-bottom {
     width: 720px;
     height: 34px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top:269px;
+    top: 269px;
     left: 600px
 }
-.m-img-title-bottom p:nth-last-child(2),.m-img-title-bottom p:nth-last-child(4),.m-img-title-bottom p:nth-last-child(6){
-    font-size:42px !important;
-    font-family:MicrosoftYaHei-Bold;
-    font-weight:bold;
-    color:rgba(255,255,255,1);
+
+.m-img-title-bottom p:nth-last-child(2),
+.m-img-title-bottom p:nth-last-child(4),
+.m-img-title-bottom p:nth-last-child(6) {
+    font-size: 42px !important;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
 }
-.m-img-title-bottom:nth-last-child(1),.m-img-title-bottom:nth-last-child(3),.m-img-title-bottom:nth-last-child(5){
-    font-size:21px;
-    font-family:MicrosoftYaHei;
-    font-weight:400 ;
-    color:rgba(255,255,255,1);
+
+.m-img-title-bottom:nth-last-child(1),
+.m-img-title-bottom:nth-last-child(3),
+.m-img-title-bottom:nth-last-child(5) {
+    font-size: 21px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
 }
-.m-img-middle{
-    width:100%;
-    height:373px;
-    background: green;
+
+.m-img-middle {
+    width: 100%;
+    height: 373px;
     display: flex;
     flex-flow: column;
     align-items: center;
     margin-top: 76px
 }
-.m-img-title-top2{
-    width:144px;
-    height:35px;
-    font-size:36px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(53,53,53,1);
+
+.m-img-title-top2 {
+    width: 144px;
+    height: 35px;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
 }
-.m-img-title-middle2{
-    width:902px;
-    height:102px;
-    font-size:20px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
+
+.m-img-title-middle2 {
+    width: 902px;
+    height: 102px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
     margin-top: 49px;
-    color:rgba(53,53,53,1);
+    color: rgba(53, 53, 53, 1);
     display: flex;
     justify-content: space-between;
     align-items: center
 }
-.m-img-title-middle2 p:nth-last-child(2){
-    font-size:38px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:#3188F4
+
+.m-img-title-middle2 p:nth-last-child(2) {
+    font-size: 38px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #3188F4
 }
-.m-img-title-bottom2{
-    width:902px;
-    height:102px;
-    font-size:20px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(53,53,53,1);
+
+.m-img-title-bottom2 {
+    width: 902px;
+    height: 102px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
     display: flex;
     justify-content: center;
     align-items: center
 }
-.m-img-title-bottom2 p:nth-last-child(1),.m-img-title-bottom2 p:nth-last-child(3),.m-img-title-bottom2 p:nth-last-child(5) {
-    font-size:38px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:#3188F4
+
+.m-img-title-bottom2 p:nth-last-child(1),
+.m-img-title-bottom2 p:nth-last-child(3),
+.m-img-title-bottom2 p:nth-last-child(5) {
+    font-size: 38px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #3188F4
 }
-.m-main-about{
+
+.m-main-about {
     width: 100%;
     height: 756px;
     background: #fff
 }
-.m-main-about-title{
-    width:252px;
-    height:36px;
-    font-size:36px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(53,53,53,1);
+
+.m-main-about-title {
+    width: 252px;
+    height: 36px;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
     margin: 0 auto;
     position: relative
 }
-.m-main-about-title p{
+
+.m-main-about-title p {
     position: relative;
     top: 54px
 }
-.m-main-about-img{
-    width:1211px;
-    height:548px;
+
+.m-main-about-img {
+    width: 1211px;
+    height: 548px;
     margin: 0 auto;
     position: relative;
     top: 150px;
@@ -130,110 +151,156 @@
     justify-content: space-between;
     flex-flow: wrap
 }
-.m-main-condition{
+
+.m-main-condition {
     width: 100%;
     height: 500px;
     background: #fff;
     display: flex;
     flex-flow: column
 }
-.m-main-condition-title{
-    width:380px;
-    height:36px;
-    font-size:36px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(53,53,53,1);
+
+.m-main-condition-title {
+    width: 380px;
+    height: 36px;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
     margin: 0 auto;
     position: relative
 }
-.m-main-condition-title p{
+
+.m-main-condition-title p {
     position: relative;
     top: 35px
 }
-.m-server{
+
+.m-server {
     position: relative;
     top: 90px;
 }
-.server-img2{
+
+.server-img2 {
     padding: 0 15px
 }
-.server-img2 p:nth-last-child(3){
-    font-size:26px;
-    font-family:MicrosoftYaHei-Bold;
-    font-weight:bold;
-    color:rgba(49,136,244,1);
+
+.server-img2 p:nth-last-child(3) {
+    font-size: 26px;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(49, 136, 244, 1);
     margin-bottom: 21px
 }
-.server-img2 p:nth-last-child(1){
-    font-size:20px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(102,102,102,1);
+
+.server-img2 p:nth-last-child(1) {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
 }
-.server-img2 p:nth-last-child(2){
+
+.server-img2 p:nth-last-child(2) {
     width: 100%;
     height: 3px;
-    border-bottom: 1px solid rgba(49,136,244,1);
+    border-bottom: 1px solid rgba(49, 136, 244, 1);
     margin-bottom: 21px
 }
-.m-main-businessModel{
+
+.m-main-businessModel {
     height: 756px;
-    width:100%;
+    width: 100%;
     margin-top: 50px;
-    background: rgba(246,246,246,1);
+    background: rgba(246, 246, 246, 1);
 }
-.m-main-businessModel-img{
+
+.m-main-businessModel-img {
     width: 1210px;
     height: 535px;
     margin: 0 auto;
     display: flex;
     margin-top: 130px
 }
-.m-main-businessModel-img img{
+
+.m-main-businessModel-img img {
     width: 242px;
     height: 535px
 }
-.m-main-join{
+
+.m-main-join {
     width: 100%;
     height: 378px;
-    background: #333;
+    background-image: url(../hehuoren/bussiness/-1483909.png);
 }
-.m-join-title-top{
-    width:599px;
-    height:56px;
-    font-size:57px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(255,255,255,1);
+
+.m-join-title-top {
+
+    width: 599px;
+    height: 56px;
+    font-size: 57px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
     display: flex;
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: space-between;
     position: relative;
     top: 96px
 }
- .m-join-btn{
-    width:193px;
-    height:62px;
-    background:rgba(49,136,244,1) !important;
-    border-radius:8px;
+
+.m-join-btn {
+    width: 193px;
+    height: 62px;
+    background: rgba(49, 136, 244, 1) !important;
+    border-radius: 8px;
     margin: 0 auto;
     position: relative;
     top: 180px;
 }
-.m-join-btn a{
-    width:96px;
-    height:25px;
-    font-size:24px;
-    font-family:MicrosoftYaHei;
-    font-weight:400;
-    color:rgba(255,255,255,1);
+
+.m-join-btn a {
+    width: 96px;
+    height: 25px;
+    font-size: 24px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
     display: inline-block;
     margin: 0 auto;
     position: relative;
     right: -48px;
     top: 12.5px
 }
-.m-footer{
+
+.m-footer {
     margin-top: 0px
+}
+
+.m-main-franchiseProcess {
+    width: 1210px;
+    height: 830px
+}
+
+.m-main-franchiseProcess-title {
+    width: 144px;
+    height: 36px;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(53, 53, 53, 1);
+    margin: 0 auto
+}
+
+.m-main-franchiseProcess-img {
+    width: 1210px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between
+}
+
+.m-main-f-img-left{
+    width: 33.333%
+}
+.m-main-f-img-right{
+    width: 33.333%
 }
