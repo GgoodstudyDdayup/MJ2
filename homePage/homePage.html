@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../html5hover20150801/css/app.css">
     <link rel="stylesheet" href="../html5hover20150801/css/index.css">
     <link rel="stylesheet" href="../html5hover20150801/css/fonts.css">
+    <script src="../JQ/jquery-3.2.1.js"></script>
+    <script src="../JQ/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -554,5 +556,22 @@
         </footer>
     </div>
 </body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        let url = `https://mapi.mingjia100.net/company/Info/get_banner`
+        $.ajax({
+            url: url,
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            Accept:'application/json',
+            processData: false,
+            type: 'get',
+            success: function (data) {
+                console.log(data);
+            }
+        })
+    })
+</script>
 
 </html>
