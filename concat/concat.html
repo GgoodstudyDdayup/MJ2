@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../homePage/homePage.css">
     <link rel="stylesheet" href="../hehuoren/bussiness.css">
     <link rel="stylesheet" href="../concat/concat.css">
+    <script src="../JQ/jquery-3.2.1.js"></script>
+    <script src="../JQ/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -25,19 +27,19 @@
         <div class="m-bannar">
             <ul>
                 <li>
-                    <a href="javascript:void(0)">首页</a>
+                    <a href="../homePage/homePage.html">首页</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">手机维修</a>
+                    <a href="../business/business.html">公司介绍</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">招商加盟</a>
+                    <a href="../business/business.html">招商加盟</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">关于我们</a>
+                    <a href="../concat/concat.html">关于我们</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">公司动态</a>
+                    <a href="../MJ/MJ.html">公司动态</a>
                 </li>
             </ul>
         </div>
@@ -85,10 +87,15 @@
         </div>
         <div class="m-main-right">
             <form action="">
-                <input type="text" placeholder="您的称呼">
-                <input type="text" placeholder="邮箱地址">
-                <textarea name="" id="" cols="30" rows="10" placeholder="您想留言的内容"></textarea>
-                <button>提交</button>
+                <input type="text" name="username" placeholder="您的称呼">
+                <input type="text" name="email" placeholder="邮箱地址">
+                <textarea name="remark" id="" cols="30" rows="10" placeholder="您想留言的内容"></textarea>
+                <input style="width:360px;
+                height:60px;
+                background:rgba(49,136,244,1);
+                border-radius:8px 8px 8px 8px;
+                border:none;
+                color:#fff" type='button' onclick="javascript:button_onclick();" value="提交">
             </form>
         </div>
     </main>
@@ -145,5 +152,39 @@
         </div>
     </footer>
 </body>
-<script src="../concat/concat.js"></script>
+<script>
+    //提交表单
+    function button_onclick(e) {
+        console.log(e)
+    }
+
+    $(document).scroll(() => {
+        let top = $(document).scrollTop()
+        // if ( top = 200) {
+        //     $('body,html').animate({
+        //         scrollTop:1100,
+        //     }, 1000)
+        // } 
+        // if(top >  1100){
+        //     $('body,html').animate({
+        //         scrollTop:2300
+        //     }, 1000)
+        // }
+        // }else{
+        //     $('body,html').animate({
+        //         scrollTop:0,
+        //     }, 1000)
+        // }
+        // }else if(top > 1100){
+        //     $('body,html').animate({
+        //         scrollTop:2300,
+        //     }, 1000)
+        //     let top = 0
+        // }
+        // 1100 2300
+        console.log($(document).scrollTop())
+    })
+
+</script>
+
 </html>

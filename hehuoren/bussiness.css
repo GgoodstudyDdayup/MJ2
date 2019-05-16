@@ -30,7 +30,9 @@
     top: 136px;
     left: 581px
 }
-
+.font-color{
+    color: #fff
+}
 .m-btn-header{
     position: absolute;
     top: 45%;

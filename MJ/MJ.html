@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../hehuoren/bussiness.css">
     <link rel="stylesheet" href="../concat/concat.css">
     <link rel="stylesheet" href="../MJ/MJ.css">
+    <script src="../JQ/jquery-3.2.1.js"></script>
+    <script src="../JQ/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -23,24 +25,22 @@
         <div class="m-logo">
             <img src="../img/logo.png" alt="">
         </div>
-        <div class="m-bannar">
-            <ul>
-                <li>
-                    <a href="javascript:void(0)">首页</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">手机维修</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">招商加盟</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">关于我们</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">公司动态</a>
-                </li>
-            </ul>
+        <div class="m-bannar" style="display:flex;z-index: 999;">
+            <div>
+                <a class="font-color" href="../homePage/homePage.html">首页</a>
+            </div>
+            <div>
+                <a class="font-color" href="../business/business.html">公司介绍</a>
+            </div>
+            <div>
+                <a class="font-color" href="../hehuoren/bussiness.html">招商加盟</a>
+            </div>
+            <div>
+                <a class="font-color" href="../concat/concat.html">关于我们</a>
+            </div>
+            <div>
+                <a class="font-color" href="../MJ/MJ.html">公司动态</a>
+            </div>
         </div>
         <div class="m-contact">
             <div class="tel">
@@ -300,5 +300,27 @@
         </div>
     </footer>
 </body>
+<script>
+    $(window).scroll(() => {
+        console.log(111)
+        if ($(window).scrollTop() >= 100) {
+            $('#head-top').addClass('fixed').css({ 'background-color': '#fff' })
+            $('.m-logo').css({ 'top': '16%' })
+            $('.m-bannar').css({ 'top': '20%' })
+            $('.m-contact').css({ 'top': '27%' })
+            $('.font-color').css({ 'color': '#333' })
+            $("#logo").attr('src', '../img/微信图片_20190515103246.png')
+            $('#tel').attr('src', '../img/微信图片_20190515103251.png')
+        } else {
+            $('#head-top').removeClass('fixed').css({})
+            $('.m-logo').css({ 'top': '2.82%' })
+            $('.m-bannar').css({ 'top': '3.21%' })
+            $('.m-contact').css({ 'top': '3.5%' })
+            $('.font-color').css({ 'color': '#fff' })
+            $("#logo").attr('src', '../img/logo.png')
+            $('#tel').attr('src', '../img/电话.png')
+        }
+    })
+</script>
 
 </html>

@@ -10,55 +10,81 @@
     <link rel="stylesheet" href="../html5hover20150801/css/app.css">
     <link rel="stylesheet" href="../html5hover20150801/css/index.css">
     <link rel="stylesheet" href="../html5hover20150801/css/fonts.css">
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../homePage/index_files/public-new.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../homePage/index_files/newzb_p220.css">
+    <script type="text/javascript" src="../homePage/index_files/jquery.min.js"></script>
     <script src="../JQ/jquery-3.2.1.js"></script>
     <script src="../JQ/jquery-3.2.1.min.js"></script>
+    <script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
 </head>
+<style>
+    .fixed {
+        position: fixed;
+        width: 100%;
+        height: 8%;
+        top: 0;
+        z-index: 999;
+    }
+
+    .font-color {
+        color: #fff
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 980px;
+    }
+
+    /* .swiper-slide {
+        background-image: url(../img/homePage.png)
+    } */
+</style>
 
 <body>
+    <script type="text/javascript" src="../homePage/index_files/jQuery.rTabs.js"></script>
     <header>
         <div class="m-header-img">
-            <img style="width:100%;height:100%" src="../img/homePage.png" alt="header">
-        </div>
-        <div class="m-logo">
-            <img src="../img/logo.png" alt="">
-        </div>
-        <div class="m-bannar" style="display:flex">
-            <div>
-                <a style="color:#fff" href="javascript:void(0)">首页</a>
-            </div>
-            <div>
-                <a style="color:#fff" href="javascript:void(0)">公司介绍</a>
-            </div>
-            <div>
-                <a style="color:#fff" href="javascript:void(0)">招商加盟</a>
-            </div>
-            <div>
-                <a style="color:#fff" href="javascript:void(0)">关于我们</a>
-            </div>
-            <div>
-                <a style="color:#fff" href="javascript:void(0)">公司动态</a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/组 20.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/加盟banner.png" alt=""></div>
+                </div>
             </div>
         </div>
-        <div class="m-contact">
-            <div class="tel">
-                <img src="../img/电话.png" alt="">
+        <div id="head-top">
+            <div class="m-logo" style="z-index: 999;">
+                <img id='logo' src="../img/logo.png" alt="">
             </div>
-            <div class="number">
-                <span>客服热线： 400-6666-888</span>
+            <div class="m-bannar" style="display:flex;z-index: 999;">
+                <div>
+                    <a class="font-color" href="../homePage/homePage.html">首页</a>
+                </div>
+                <div>
+                    <a class="font-color" href="../business/business.html">公司介绍</a>
+                </div>
+                <div>
+                    <a class="font-color" href="../hehuoren/bussiness.html">招商加盟</a>
+                </div>
+                <div>
+                    <a class="font-color" href="../concat/concat.html">关于我们</a>
+                </div>
+                <div>
+                    <a class="font-color" href="../MJ/MJ.html">公司动态</a>
+                </div>
             </div>
-        </div>
-        <div class="m-content">
-            <p>一百分的维修服务</p>
-            <p>是为你的十分满意</p>
-            <div>
-                <span>线上线下同价</span>
-                <span>上门到店任选</span>
-                <span>省时省力省心</span>
+            <div class="m-contact" style="z-index: 999;">
+                <div class="tel">
+                    <img id="tel" src="../img/电话.png" alt="">
+                </div>
+                <div class="number">
+                    <span class="font-color">客服热线： 400-6666-888</span>
+                </div>
             </div>
         </div>
     </header>
-    <div class="m-action" style="background:rgba(242,246,249,1)">
-        <div class="m-content-item">
+    <div class="m-action" style="background:rgba(242,246,249,1);">
+        <div class="m-content-item" style="z-index: 999;">
             <div class="m-item">
                 <div class="server-img" class="item-left">
                     <img src="../img/组 7.png" alt="">
@@ -84,7 +110,7 @@
                     <img src="../img/组 9.png" alt="">
                 </div>
                 <div class="item-right">
-                    <span class="num">18</span>
+                    <span class="num">3</span>
                     <span class="title">个月超长保质</span>
                     <p class="des">一物一码，品质配件</p>
                 </div>
@@ -135,21 +161,11 @@
                 <li>
                     <div>
                         <figure class="effect-jazz">
-                            <img src="../img/矢量智能对象 拷贝.png" alt="云上的日子|soft days">
+                            <img src="../img/名家100官网新版_03.png" alt="云上的日子|soft days">
                             <figcaption>
                                 <h2>
                                     屏幕故障
-                                    <br>
-                                    <span>
-                                        还在为碎屏而心碎吗？
-                                    </span>
                                 </h2>
-                                <p>
-                                    换屏139起
-                                </p>
-                                <a href="#">
-                                    查看更多
-                                </a>
                             </figcaption>
                         </figure>
                     </div>
@@ -159,54 +175,33 @@
                         <img src="../img/3518.png" alt="云上的日子|soft days">
                         <figcaption>
                             <h2>
-                                屏幕故障
-                                <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
+                                电池/充电
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
+
                         </figcaption>
                     </figure>
                 </li>
                 <li>
                     <div>
                         <figure class="effect-jazz">
-                            <img src="../img/3518.png" alt="云上的日子|soft days">
+                            <img src="../img/名家100官网新版_09.png" alt="云上的日子|soft days">
                             <figcaption>
                                 <h2>
-                                    屏幕故障
-                                    <br>
-                                    <span>
-                                        还在为碎屏而心碎吗？
-                                    </span>
+                                    内存升级
                                 </h2>
-                                <p>
-                                    换屏139起
-                                </p>
-                                <a href="#">
-                                    查看更多
-                                </a>
+
                             </figcaption>
                         </figure>
                     </div>
                 </li>
                 <li>
                     <figure class="effect-jazz">
-                        <img src="../img/3518.png" alt="云上的日子|soft days">
+                        <img src="../img/名家100官网新版_11.png" alt="云上的日子|soft days">
                         <figcaption>
                             <h2>
-                                屏幕故障
-                                <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
+                                其他问题
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
+
                         </figcaption>
                     </figure>
                 </li>
@@ -216,21 +211,16 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:360px" src="../img/1a8ed59c090f4496379ed0a1886da028.png" alt="">
                         <figcaption>
-                            <h2>
-                                屏幕故障
+                            <h2 style="font-size:35px">
+                                加盟店
                                 <br>
                                 <span>
-                                    还在为碎屏而心碎吗？
+                                    查看更多
                                 </span>
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
+
                         </figcaption>
                     </figure>
                 </div>
@@ -238,21 +228,12 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/03ab570e5995e20454d359a4a85aea3.png" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                重庆观音桥店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
                         </figcaption>
                     </figure>
                 </div>
@@ -260,21 +241,11 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/广州车公庙1.jpg" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                广州车公庙店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
-                            </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
                         </figcaption>
                     </figure>
                 </div>
@@ -282,21 +253,11 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/杭州文三店1.jpg" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                杭州文三店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
-                            </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
                         </figcaption>
                     </figure>
                 </div>
@@ -304,21 +265,12 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/3948200ee9e41c787d15ba1d1b7fa8e.png" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                北京木樨园店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
                         </figcaption>
                     </figure>
                 </div>
@@ -326,21 +278,13 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/小白楼7.jpg" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                    天津小白楼店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
+                           
                         </figcaption>
                     </figure>
                 </div>
@@ -348,21 +292,13 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/重庆三峡5.jpg" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                重庆三峡店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
+                            
                         </figcaption>
                     </figure>
                 </div>
@@ -370,21 +306,13 @@
             <li>
                 <div>
                     <figure class="effect-jazz">
-                        <img style="width:282px;height:212px" src="../img/b3f9ddcf7622cb9588332f9961f408b.png" alt="">
+                        <img style="width:282px;height:212px" src="../img/杭州城建店1.jpg" alt="">
                         <figcaption>
                             <h2>
-                                屏幕故障
+                                杭州城建店
                                 <br>
-                                <span>
-                                    还在为碎屏而心碎吗？
-                                </span>
+                                
                             </h2>
-                            <p>
-                                换屏139起
-                            </p>
-                            <a href="#">
-                                查看更多
-                            </a>
                         </figcaption>
                     </figure>
                 </div>
@@ -484,21 +412,329 @@
                 color:rgba(68,72,74,1);">海量用户在线预约维修
             </p>
             <div class="evaluate">
-                <div class="evaluate-top">
-                    <div class="evaluate-top-left">
-                        <span>最新维修服务</span>
-                        <span>当前已有</span>
-                        <span>391</span>
-                        <span>位用户申请预约维修服务</span>
+                <div class="wrap ofw">
+                    <div class="scroll-list">
+                        <div class="zb-tit-font">
+                            <h3>最新维修服务</h3>
+                            <p>当前已有<span style=" color:#ff5659">391</span>位用户申请预约维修服务</p><a style='background:#3188F4'
+                                href="http://www.qizuang.com/zhaobiao/#tab1">立即维修</a>
+                        </div>
+                        <div class="zb-scroll-box">
+                            <ul class="newser">
+                                <li class="tlist1">用户</li>
+                                <li class="tlist1">品牌型号</li>
+                                <li class="tlist1">故障</li>
+                                <li class="tlist1">地区</li>
+                                <li class="tlist1">发布时间</li>
+                            </ul>
+                            <div class="maquee">
+                                <ul style="margin-top: -4.51066px;">
+                                    <li>
+                                        <span class="tlist1">安**忆</span>
+                                        <span class="tlist1">OPPO</span>
+                                        <span class="tlist1">全包</span>
+                                        <span class="tlist1">外屏碎</span>
+                                        <span class="tlist1">2分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">M**5</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">内屏碎</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">9分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">k**k</span>
+                                        <span class="tlist1">魅族</span>
+                                        <span class="tlist1">升级内存</span>
+                                        <span class="tlist1">杭州</span>
+                                        <span class="tlist1">21秒前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">单**6</span>
+                                        <span class="tlist1">魅族</span>
+                                        <span class="tlist1">换电池</span>
+                                        <span class="tlist1">哈尔滨</span>
+                                        <span class="tlist1">6分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">申先生</span>
+                                        <span class="tlist1">OPPO</span>
+                                        <span class="tlist1">升级内存</span>
+                                        <span class="tlist1">天津</span>
+                                        <span class="tlist1">2分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">终先生</span>
+                                        <span class="tlist1">vivo</span>
+                                        <span class="tlist1">后壳损坏</span>
+                                        <span class="tlist1">重庆</span>
+                                        <span class="tlist1">7分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">平女士</span>
+                                        <span class="tlist1">华为</span>
+                                        <span class="tlist1">内屏碎</span>
+                                        <span class="tlist1">合肥</span>
+                                        <span class="tlist1">9分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">陈先生</span>
+                                        <span class="tlist1">魅族</span>
+                                        <span class="tlist1">声音故障</span>
+                                        <span class="tlist1">上海</span>
+                                        <span class="tlist1">5分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">封女士</span>
+                                        <span class="tlist1">三星</span>
+                                        <span class="tlist1">后壳损坏</span>
+                                        <span class="tlist1">苏州</span>
+                                        <span class="tlist1">5分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">夏侯先生</span>
+                                        <span class="tlist1">OPPO</span>
+                                        <span class="tlist1">信号问题</span>
+                                        <span class="tlist1">天津</span>
+                                        <span class="tlist1">9分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">晏女士</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">外屏碎</span>
+                                        <span class="tlist1">上海</span>
+                                        <span class="tlist1">5分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">慕容女士</span>
+                                        <span class="tlist1">华为</span>
+                                        <span class="tlist1">换电池</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">3分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">黄先生</span>
+                                        <span class="tlist1">小米</span>
+                                        <span class="tlist1">升级内存</span>
+                                        <span class="tlist1">沈阳</span>
+                                        <span class="tlist1">8分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">龙先生</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">摄像问题</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">7分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">葛先生</span>
+                                        <span class="tlist1">小米</span>
+                                        <span class="tlist1">外屏碎</span>
+                                        <span class="tlist1">哈尔滨</span>
+                                        <span class="tlist1">8分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">瞿先生</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">声音故障</span>
+                                        <span class="tlist1">大连</span>
+                                        <span class="tlist1">5分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">骆先生</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">换电池</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">9分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">诸葛女士</span>
+                                        <span class="tlist1">华为</span>
+                                        <span class="tlist1">外屏碎</span>
+                                        <span class="tlist1">苏州</span>
+                                        <span class="tlist1">6分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">金先生</span>
+                                        <span class="tlist1">华为</span>
+                                        <span class="tlist1">升级内存</span>
+                                        <span class="tlist1">沈阳</span>
+                                        <span class="tlist1">21秒前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">池先生</span>
+                                        <span class="tlist1">魅族</span>
+                                        <span class="tlist1">升级内存</span>
+                                        <span class="tlist1">济南</span>
+                                        <span class="tlist1">1分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">寇女士</span>
+                                        <span class="tlist1">三星</span>
+                                        <span class="tlist1">换电池</span>
+                                        <span class="tlist1">苏州</span>
+                                        <span class="tlist1">5分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">令狐女士</span>
+                                        <span class="tlist1">华为</span>
+                                        <span class="tlist1">换电池</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">50秒前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">党先生</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">按键故障</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">5分钟前</span>
+                                    </li>
+                                    <li>
+                                        <span class="tlist1">赵先生</span>
+                                        <span class="tlist1">苹果</span>
+                                        <span class="tlist1">按键故障</span>
+                                        <span class="tlist1">北京</span>
+                                        <span class="tlist1">2分钟前</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="evaluate-top-middel">
-                        <button>1223</button>
+                    <div class="user-mes">
+                        <div class="zb-tit-font">
+                            <h3>最新客户点评</h3>
+                        </div>
+                        <div class="user-mes-box">
+                            <div class="user-mes-list j-tab-con">
+                                <div class="user-mes-item" style="display: none;">
+                                    <div class="user-info">
+                                        <div class="user-head">
+                                            <img src="./index_files/renwu.jpg" alt="齐装网">
+                                        </div>
+                                        <ul class="zb-star">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <p>
+                                            <span>小夜...</span>7分钟前发布了
+                                            <br> 评价：北京木樨园店 </p>
+                                    </div>
+                                    <div class="user-messge">
+                                            手机又恢复正常了。技术过硬，服务态度好，希望一如既往的做好售后。
+                                    </div>
+                                </div>
+                                <div class="user-mes-item" style="display: none;">
+                                    <div class="user-info">
+                                        <div class="user-head">
+                                            <img src="./index_files/renwu.jpg" alt="">
+                                        </div>
+                                        <ul class="zb-star">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <p>
+                                            <span>lanbaobao</span>4分钟前发布了
+                                            <br> 评价：杭州城建大厦店 </p>
+                                    </div>
+                                    <div class="user-messge">真的是运气超好，从开始检测到沟通维修，很快完成，也没有乱收费。
+                                    </div>
+                                </div>
+                                <div class="user-mes-item" style="display: none;">
+                                    <div class="user-info">
+                                        <div class="user-head">
+                                            <img src="./index_files/renwu.jpg" alt="">
+                                        </div>
+                                        <ul class="zb-star">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <p>
+                                            <span>徐荣</span>6分钟前发布了
+                                            <br> 评价：上海不夜城店 </p>
+                                    </div>
+                                    <div class="user-messge">
+                                            碎屏后立即联系维修，着急用手机马上就修好了，给个五星好评。
+                                    </div>
+                                </div>
+                                <div class="user-mes-item" style="display: none;">
+                                    <div class="user-info">
+                                        <div class="user-head">
+                                            <img src="./index_files/renwu.jpg" alt="">
+                                        </div>
+                                        <ul class="zb-star">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <p>
+                                            <span>淙淙</span>9分钟前发布了
+                                            <br> 评价：重庆观音桥店 </p>
+                                    </div>
+                                    <div class="user-messge">
+                                            朋友推荐来的，以后有需要就来这家，很感谢。
+                                    </div>
+                                </div>
+                                <div class="user-mes-item" style="display: block;">
+                                    <div class="user-info">
+                                        <div class="user-head">
+                                            <img src="./index_files/renwu.jpg" alt="">
+                                        </div>
+                                        <ul class="zb-star">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <p>
+                                            <span>张先生</span>5分钟前发布了
+                                            <br> 评价：苏州广济南路店 </p>
+                                    </div>
+                                    <div class="user-messge">手机修的很快，还免费清洗，终于找到技术好的维修师傅了。</div>
+                                </div>
+                                <div class="user-mes-item" style="display: none;">
+                                    <div class="user-info">
+                                        <div class="user-head">
+                                            <img src="./index_files/renwu.jpg" alt="">
+                                        </div>
+                                        <ul class="zb-star">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                        <p>
+                                            <span>梁</span>3分钟前发布了
+                                            <br> 评价：济南高新万达店</p>
+                                    </div>
+                                    <div class="user-messge">
+                                            寄过去很快修好了，还质保三个月，满意。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-x j-tab-nav">
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class="current"></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="evaluate-top-right">最新客户点评</div>
-                </div>
-                <div class="evaluate2">
-                    <div class="evaluate-left">22</div>
-                    <div class="evaluate-right">22</div>
                 </div>
             </div>
         </div>
@@ -556,7 +792,33 @@
         </footer>
     </div>
 </body>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        loop: true
+    })        
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(".user-mes-box").rTabs({
+            btnClass: '.j-tab-nav',  /*按钮的父级Class*/
+            conClass: '.j-tab-con',  /*内容的父级Class*/
+            speed: 800,
+            auto: true
+        });
+        setInterval('autoScroll(".maquee")', 500);
+    });
 
+    function autoScroll(obj) {
+        $(obj).find("ul").animate({
+            marginTop: "-30px"
+        }, 2000, function () {
+            $(this).css({
+                marginTop: "0px"
+            }).find("li:first").appendTo(this);
+        })
+    }
+</script>
 <script type="text/javascript">
     $(document).ready(function () {
         let url = `https://mapi.mingjia100.net/company/Info/get_banner`
@@ -564,13 +826,32 @@
             url: url,
             dataType: 'jsonp',
             jsonp: 'callback',
-            Accept:'application/json',
+            Accept: 'application/json',
             processData: false,
             type: 'get',
             success: function (data) {
                 console.log(data);
             }
         })
+    })
+    $(window).scroll(() => {
+        if ($(window).scrollTop() >= 100) {
+            $('#head-top').addClass('fixed').css({ 'background-color': '#fff' })
+            $('.m-logo').css({ 'top': '16%' })
+            $('.m-bannar').css({ 'top': '20%' })
+            $('.m-contact').css({ 'top': '27%' })
+            $('.font-color').css({ 'color': '#333' })
+            $("#logo").attr('src', '../img/微信图片_20190515103246.png')
+            $('#tel').attr('src', '../img/微信图片_20190515103251.png')
+        } else {
+            $('#head-top').removeClass('fixed').css({})
+            $('.m-logo').css({ 'top': '2.82%' })
+            $('.m-bannar').css({ 'top': '3.21%' })
+            $('.m-contact').css({ 'top': '3.5%' })
+            $('.font-color').css({ 'color': '#fff' })
+            $("#logo").attr('src', '../img/logo.png')
+            $('#tel').attr('src', '../img/电话.png')
+        }
     })
 </script>
 
