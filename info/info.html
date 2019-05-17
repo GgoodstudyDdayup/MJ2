@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>名家动态</title>
+    <title>原文详情</title>
     <link rel="stylesheet" href="../html5hover20150801/css/app.css">
     <link rel="stylesheet" href="../html5hover20150801/css/fonts.css">
     <link rel="stylesheet" href="../html5hover20150801/css/index.css">
     <link rel="stylesheet" href="../homePage/homePage.css">
     <link rel="stylesheet" href="../hehuoren/bussiness.css">
     <link rel="stylesheet" href="../concat/concat.css">
-    <link rel="stylesheet" href="../MJ/MJ.css">
+    <!-- <link rel="stylesheet" href="../MJ/MJ.css"> -->
     <script src="../JQ/jquery-3.2.1.js"></script>
     <script src="../JQ/jquery-3.2.1.min.js"></script>
 </head>
@@ -56,16 +56,11 @@
         <p></p>
         <p>DYNAMIC</p>
     </div>
-    <p class="m-main-content-p">新闻动态</p>
-    <main class="m-main-content">
-        <div class="m-main-content-div">
-            <ul>
-                
-            </ul>
-        </div>
-    </main>
+    <div class="content-info" style="width:50%;margin:0 auto;margin-top: 10%">
+    </div>
     <footer class="m-footer">
         <div class="m-footer-a">
+
             <div class="m-footer-t">
                 <span>关于我们</span>
                 <span>/about us</span>
@@ -118,69 +113,23 @@
     </footer>
 </body>
 <script>
-    $(document).ready(function () {
-        let url = `https://mapi.mingjia100.net/company/Info/get_news`
+    $(window).ready(() => {
+        let id = window.location.href.split('=')[1]
         $.ajax({
-            url: url,
+            url: `https://mapi.mingjia100.net/company/Info/get_news_detail/id/?id=${id}`,
             dataType: 'jsonp',
             jsonp: 'callback',
             Accept: 'application/json',
             processData: false,
             type: 'get',
-            success: function (data) {
-                let _data = data.data
-                let html = ``
-                for (let variable in _data) {
-                    if (variable == 'count' || variable == 'page') {
-                        return false
-                    } else {
-                        html += `<li>
-                     <div>
-                         <figure class="effect-jazz">
-                             <img style="width:282px;height:212px" src="${_data[variable].main_image}"
-                                 alt="">
-                           <figcaption onClick="info(${_data[variable].id})">
-                                <h2>
-                                     查看原文
-                                 </h2>
-                             </figcaption>
-                         </figure>
-                     </div>
-                     <span style="font-size:18px;width:280px;word-wrap:break-word ;
-                     height:43px;
-                     padding: 5px 10px;">${_data[variable].title}
-                       <span style="width:220px;
-                     font-size:13px;
-                     font-family:MicrosoftYaHei;
-                     font-weight:400;
-                     color:#AFAFAF;
-                     display: block;
-                     margin-top: 20px">${_data[variable].update_time}</span>
-                 </li>`
-                        if (variable == 7) {
-                            $('ul').append(`${html}`)
-                        }
-                    }
-                }
-
-            }
-        })
-    });
-    function info(id){
-        $.ajax({
-            url:`https://mapi.mingjia100.net/company/Info/get_news_detail/id/?id=${id}`,
-            dataType: 'jsonp',
-            jsonp: 'callback',
-            Accept: 'application/json',
-            processData: false,
-            type: 'get',
-            success:(res)=>{
-                location.href=`../info/info.html?id=${id}`
+            success: (res) => {
+                let result = res.data.content.replace(/src\=\"/g, 'src="https://datasystem.mingjia100.net')
+                $('.content-info').append(`${result}`)
                 console.log(res)
             }
         })
-        console.log(id)
-    }
+        console.log(window.location.href.split('=')[1])
+    })
 </script>
 
 </html>

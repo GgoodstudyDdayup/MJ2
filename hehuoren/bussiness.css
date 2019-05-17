@@ -376,3 +376,28 @@ color:rgba(49,136,244,1);
     color:rgba(53,53,53,1);
     line-height:34px;
 }
+figcaption::after {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    content: '' !important;
+    opacity: 0 !important;
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1)!important;
+    transform: rotate3d(0,0,1,45deg) scale3d(1,0,1)!important;
+    -webkit-transform-origin: 50% 50%!important;
+    -ms-transform-origin: 50% 50%!important;
+    transform-origin: 50% 50%!important;
+}
+.effect-jazz img {
+    width: 242px;
+    height: 535px;
+}
+
+.items{
+    display: flex!important
+}
+figure figcaption, figure figcaption > a {
+    top: -40px !important;
+}

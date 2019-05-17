@@ -13,7 +13,7 @@ p {
     font-weight: 400;
     color: rgba(53, 53, 53, 1);
     left: 18.5%;
-    top: 40%;
+    top: 25%;
 }
 .m-main-content-div{
     width: 100%;
@@ -30,4 +30,5 @@ main ul li{
     display: flex;
     flex-flow: column;
     height: 350px;
+    margin-bottom: 25px;
 }

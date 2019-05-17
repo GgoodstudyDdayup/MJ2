@@ -12,179 +12,244 @@
     <link rel="stylesheet" href="../homePage/homePage.css">
     <link rel="stylesheet" href="../hehuoren/bussiness.css">
     <link rel="stylesheet" href="../concat/concat.css">
+    <link rel="stylesheet" href="../concat/swiper.min.css">
+
     <script src="../JQ/jquery-3.2.1.js"></script>
     <script src="../JQ/jquery-3.2.1.min.js"></script>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+
 </head>
 
 <body>
-    <header>
-        <div class="m-header-img">
-            <img style="width:100%" src="../concat/联系我们/摄图网_501226658.png" alt="header">
-        </div>
-        <div class="m-logo">
-            <img src="../img/logo.png" alt="">
-        </div>
-        <div class="m-bannar">
-            <ul>
-                <li>
-                    <a href="../homePage/homePage.html">首页</a>
-                </li>
-                <li>
-                    <a href="../business/business.html">公司介绍</a>
-                </li>
-                <li>
-                    <a href="../business/business.html">招商加盟</a>
-                </li>
-                <li>
-                    <a href="../concat/concat.html">关于我们</a>
-                </li>
-                <li>
-                    <a href="../MJ/MJ.html">公司动态</a>
-                </li>
-            </ul>
-        </div>
-        <div class="m-contact">
-            <div class="tel">
-                <img src="../img/电话.png" alt="">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <header>
+                    <div class="m-header-img">
+                        <img style="width:100%" src="../concat/联系我们/摄图网_501226658.png" alt="header">
+                    </div>
+                    <div class="m-logo">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+                    <div class="m-bannar">
+                        <ul>
+                            <li>
+                                <a href="../homePage/homePage.html">首页</a>
+                            </li>
+                            <li>
+                                <a href="../business/business.html">公司介绍</a>
+                            </li>
+                            <li>
+                                <a href="../hehuoren/bussiness.html">招商加盟</a>
+                            </li>
+                            <li>
+                                <a href="../concat/concat.html">关于我们</a>
+                            </li>
+                            <li>
+                                <a href="../MJ/MJ.html">公司动态</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-contact">
+                        <div class="tel">
+                            <img src="../img/电话.png" alt="">
+                        </div>
+                        <div class="number">
+                            <span>客服热线： 400-6666-888</span>
+                        </div>
+                    </div>
+                </header>
+                <div class="m-concat ">
+                    <p>联系我们</p>
+                    <p></p>
+                    <p>CONTACT US</p>
+                </div>
             </div>
-            <div class="number">
-                <span>客服热线： 400-6666-888</span>
+            <div class="swiper-slide">
+                <main>
+                    <div class="m-main-left">
+                        <div class="m-main-left-item">
+                            <p>联系方式</p>
+                            <p>名易家通讯科技有限公司</p>
+                            <p>
+                                <img src="../concat/联系我们/矢量智能对象.png" alt="">
+                                <span>总部地址：江苏省苏州市姑苏区万达广场C座1306室</span>
+                            </p>
+                            <p>
+                                <img src="../concat/联系我们/矢量智能对象1.png" alt="">
+                                <span>客服电话：400-6188-100&nbsp&nbsp&nbsp&nbsp0512-67518100</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-main-right">
+                        <div><img src="../img/20190510165651.png" alt=""></div>
+                        <p>扫码关注公众号，在线预约赢好礼，随时了解名家动态</p>
+                    </div>
+                </main>
             </div>
+            <div class="swiper-slide">
+                <main>
+                    <div class="m-main-left">
+                        <div class="m-main-left-item">
+                            <p>
+                                <img src="../concat/联系我们/组 2.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-main-right">
+                        <form action="">
+                            <input type="text" name="username" placeholder="您的称呼">
+                            <input type="text" name="email" placeholder="邮箱地址">
+                            <textarea name="remark" id="text" cols="30" rows="10" placeholder="您想留言的内容"></textarea>
+                            <input type="button" value="提交" style="background: rgba(49,136,244,1);
+                            border: none;
+                            color: #fff;
+                            width: 360px;
+                            height: 60px;" onclick="checkOut()">
+                        </form>
+                    </div>
+                </main>
+            </div>
+            <div class="swiper-slide">
+                <footer class="m-footer">
+                    <div class="m-footer-a">
+                        <div class="m-footer-t">
+                            <span>关于我们</span>
+                            <span>/about us</span>
+                            <div class="m-footer-c">
+                                <a href="">关于我们</a>
+                                <a href="">联系我们</a>
+                                <a href="" class="more">点击了解更多方案...</a>
+                            </div>
+                        </div>
+                        <div class="m-footer-t">
+                            <span>咨询中心</span>
+                            <span>/news</span>
+                            <div class="m-footer-c">
+                                <a href="">招商加盟</a>
+                                <a href="">门店展示</a>
+                            </div>
+                        </div>
+                        <div class="m-footer-t">
+                            <span>解决方案</span>
+                            <span>/solition</span>
+                            <div class="m-footer-c">
+                                <a href="">维修方案</a>
+                                <a href="">维修问题</a>
+                                <a href="">维修流程</a>
+                            </div>
+                        </div>
+                        <div class="m-footer-t">
+                            <span>服务支持</span>
+                            <span>/service</span>
+                            <div class="m-footer-c">
+                                <a href="">友情链接</a>
+                                <a href="">名家天猫店</a>
+                                <a href="">名家淘宝店</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-footer-code">
+                        <img src="../img/20190510165651.png" alt="">
+                        <div>
+                            <span>微信服务号</span>
+                            <span>|</span>
+                            <span>关注名家</span>
+                        </div>
+                    </div>
+                    <div class="m-footer-item">
+                        <p>
+                            Copyright © 2016 - 2018 名家. All Rights Reserved.苏ICP备18042956号
+                        </p>
+                    </div>
+                </footer>
+            </div>
+
         </div>
-    </header>
-    <div class="m-concat ">
-        <p>联系我们</p>
-        <p></p>
-        <p>CONTACT US</p>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
     </div>
-    <main>
-        <div class="m-main-left">
-            <div class="m-main-left-item">
-                <p>联系方式</p>
-                <p>名易家通讯科技有限公司</p>
-                <p>
-                    <img src="../concat/联系我们/矢量智能对象.png" alt="">
-                    <span>总部地址：江苏省苏州市姑苏区万达广场C座1306室</span>
-                </p>
-                <p>
-                    <img src="../concat/联系我们/矢量智能对象1.png" alt="">
-                    <span>客服电话：400-6188-100&nbsp&nbsp&nbsp&nbsp0512-67518100</span>
-                </p>
-            </div>
-        </div>
-        <div class="m-main-right">
-            <div><img src="../img/20190510165651.png" alt=""></div>
-            <p>扫码关注公众号，在线预约赢好礼，随时了解名家动态</p>
-        </div>
-    </main>
-    <main>
-        <div class="m-main-left">
-            <div class="m-main-left-item">
-                <p>
-                    <img src="../concat/联系我们/组 2.png" alt="">
-                </p>
-            </div>
-        </div>
-        <div class="m-main-right">
-            <form action="">
-                <input type="text" name="username" placeholder="您的称呼">
-                <input type="text" name="email" placeholder="邮箱地址">
-                <textarea name="remark" id="" cols="30" rows="10" placeholder="您想留言的内容"></textarea>
-                <input style="width:360px;
-                height:60px;
-                background:rgba(49,136,244,1);
-                border-radius:8px 8px 8px 8px;
-                border:none;
-                color:#fff" type='button' onclick="javascript:button_onclick();" value="提交">
-            </form>
-        </div>
-    </main>
-    <footer class="m-footer">
-        <div class="m-footer-a">
-            <div class="m-footer-t">
-                <span>关于我们</span>
-                <span>/about us</span>
-                <div class="m-footer-c">
-                    <a href="">关于我们</a>
-                    <a href="">联系我们</a>
-                    <a href="" class="more">点击了解更多方案...</a>
-                </div>
-            </div>
-            <div class="m-footer-t">
-                <span>咨询中心</span>
-                <span>/news</span>
-                <div class="m-footer-c">
-                    <a href="">招商加盟</a>
-                    <a href="">门店展示</a>
-                </div>
-            </div>
-            <div class="m-footer-t">
-                <span>解决方案</span>
-                <span>/solition</span>
-                <div class="m-footer-c">
-                    <a href="">维修方案</a>
-                    <a href="">维修问题</a>
-                    <a href="">维修流程</a>
-                </div>
-            </div>
-            <div class="m-footer-t">
-                <span>服务支持</span>
-                <span>/service</span>
-                <div class="m-footer-c">
-                    <a href="">友情链接</a>
-                    <a href="">名家天猫店</a>
-                    <a href="">名家淘宝店</a>
-                </div>
-            </div>
-        </div>
-        <div class="m-footer-code">
-            <img src="../img/20190510165651.png" alt="">
-            <div>
-                <span>微信服务号</span>
-                <span>|</span>
-                <span>关注名家</span>
-            </div>
-        </div>
-        <div class="m-footer-item">
-            <p>
-                Copyright © 2016 - 2018 名家. All Rights Reserved.苏ICP备18042956号
-            </p>
-        </div>
-    </footer>
+
+
+
+
+
+    <script src="../concat/swiper.min.js"></script>
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        function checkOut() {
+            let first = $("input[name='username']").val();
+            let second = $("input[name='email']").val();
+            let last = $("textarea[name='remark']").val()
+            $.ajax({
+                url: 'https://mapi.mingjia100.net/company/Info/form',
+                type: 'POST',
+                data: {
+                    username: `${first}`,
+                    email: `${second}`,
+                    remark: `${last}`
+                },
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                Accept: 'application/json',
+                success: (res) => {
+                    console.log(res)
+                }
+            })
+            console.log(first, second, last)
+        }
+    </script>
 </body>
-<script>
-    //提交表单
-    function button_onclick(e) {
-        console.log(e)
-    }
-
-    $(document).scroll(() => {
-        let top = $(document).scrollTop()
-        // if ( top = 200) {
-        //     $('body,html').animate({
-        //         scrollTop:1100,
-        //     }, 1000)
-        // } 
-        // if(top >  1100){
-        //     $('body,html').animate({
-        //         scrollTop:2300
-        //     }, 1000)
-        // }
-        // }else{
-        //     $('body,html').animate({
-        //         scrollTop:0,
-        //     }, 1000)
-        // }
-        // }else if(top > 1100){
-        //     $('body,html').animate({
-        //         scrollTop:2300,
-        //     }, 1000)
-        //     let top = 0
-        // }
-        // 1100 2300
-        console.log($(document).scrollTop())
-    })
-
-</script>
 
 </html>

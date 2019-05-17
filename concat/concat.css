@@ -79,7 +79,7 @@ main {
 }
 
 .m-main-left p:nth-last-child(2) {
-    width: 492px;
+    width: 380px;
     height: 21px;
     font-size: 15px;
     font-family: MicrosoftYaHei;
@@ -89,7 +89,7 @@ main {
 }
 
 .m-main-left p:nth-last-child(1) {
-    width: 492px;
+    width: 338px;
     height: 21px;
     font-size: 15px;
     font-family: MicrosoftYaHei;
@@ -143,4 +143,7 @@ form button {
     border:none;
     font-size: 16px;
     color: #fff
+}
+.m-footer {
+    margin-top: 30%;
 }
